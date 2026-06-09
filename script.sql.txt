@@ -1,0 +1,30 @@
+---
+
+### 2. Script do Banco de Dados Oracle
+
+Crie um arquivo com o nome **`script.sql`** na raiz do seu projeto e cole o DDL abaixo. Ele atende ao requisito *"Scripts ou instruções de banco de dados"*:
+
+```sql
+-- =========================================================
+-- SCRIPT SQL PARA CRIAÇÃO DAS TABELAS NO ORACLE
+-- =========================================================
+
+-- Tabela principal de Soluções Espaciais
+CREATE TABLE TB_SOLUCAO_ESPACIAL (
+    id NUMBER(19,0) NOT NULL,
+    nome VARCHAR2(100) NOT NULL,
+    descricao VARCHAR2(500) NOT NULL,
+    area_impacto VARCHAR2(100) NOT NULL,
+    status VARCHAR2(20) NOT NULL,
+    ods VARCHAR2(100) NOT NULL,
+    impacto NUMBER(10,0) NOT NULL,
+    urgencia NUMBER(10,0) NOT NULL,
+    prioridade VARCHAR2(10) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- Sequence para geração automática de IDs sequenciais
+CREATE SEQUENCE SEQ_SOLUCAO_ESPACIAL 
+START WITH 1 
+INCREMENT BY 1 
+NOCACHE;
