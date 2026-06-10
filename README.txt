@@ -26,3 +26,5 @@ O acúmulo de lixo espacial na órbita baixa da Terra representa uma ameaça dir
 3. Execute o projeto através do IntelliJ clicando em *Run* na classe `OrbsafeJavaGsApplication` ou pelo terminal utilizando o comando:
    ```bash
    mvn spring-boot:run
+
+Link do vídeo: https://youtu.be/qu3qGk-4Lzo
